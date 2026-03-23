@@ -84,54 +84,15 @@ button { border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; 
 
 .card i { font-size: 2rem; color: var(--accent-orange); margin-bottom: 15px; }
 
-.TVET-image {
-    width: 60px;      /* Adjust size as needed */
-    height: 60px;     /* Keep it square */
-    object-fit: contain; 
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.Institution-image{
-    width: 60px;      /* Adjust size as needed */
-    height: 60px;     /* Keep it square */
-    object-fit: contain; 
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.News-image{
-    width: 60px;      /* Adjust size as needed */
-    height: 60px;     /* Keep it square */
-    object-fit: contain; 
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.Survey-image{
-    width: 60px;      /* Adjust size as needed */
-    height: 60px;     /* Keep it square */
-    object-fit: contain; 
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.About-image{
-    width: 60px;      /* Adjust size as needed */
-    height: 60px;     /* Keep it square */
-    object-fit: contain; 
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+.TVET-image, 
+.Institution-image, 
+.News-image, 
+.Survey-image, 
+.About-image, 
 .Resources-image{
-    width: 60px;      /* Adjust size as needed */
-    height: 60px;     /* Keep it square */
+    width: 60px;
+    height: 60px;
     object-fit: contain; 
     margin-bottom: 15px;
     display: block;
