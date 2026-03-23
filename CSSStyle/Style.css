@@ -60,12 +60,31 @@ button { border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; 
 }
 
 .card {
-    background: white;
-    padding: 20px;
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 25px;
     text-align: center;
+    border: 1px solid #eee;
+    transition: all 0.3s ease; /* This makes the hover look smooth */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Adds a deeper shadow */
+    border-color: #0038a8; /* Optional: TESDA Blue border on hover */
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; 
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .programs-section{
     max-width: 1200px;
     margin:0 auto;
@@ -75,27 +94,17 @@ button { border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; 
     position: relative;
     z-index: 10;
 }
-.program-grid{
-    display:grid;
-    /* This creates 3 equal columns */
-    grid-template-columns: repeat (3, 1fr);
-    gap: 20 px;
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed: No space after repeat */
+    gap: 20px;                             /* Fixed: No space before px */
+    padding: 20px;
 }
 
 .card i { font-size: 2rem; color: var(--accent-orange); margin-bottom: 15px; }
 
-
-.TVET-image, 
-.Institution-image, 
-.News-image, 
-.Survey-image, 
-.About-image, 
-.Resources-image{
-    width: 60px;
-    height: 60px;
-    object-fit: contain; 
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: 1fr; /* Stacks cards on top of each other on phones */
+    }
 }
